@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tech Challenge Market</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="user_name">Kullanıcı adı</string>
+    <string name="password">Parola</string>
+    <string name="remember_me">Beni Hatırla</string>
+    <string name="btn_login">Giriş</string>
+
+    <string name="toast_empty_field">Lütfen tüm alanları doldurunuz</string>
+    <string name="toast_wrong_field">Hatalı kullanıcı adı veya şifre</string>
+    <string name="toast_success">Giriş başarılı!</string>
+    <string name="menu_exit">Çıkış</string>
+</resources>

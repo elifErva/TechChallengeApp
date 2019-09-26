@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/item_date"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"
+                android:textColorHighlight="@color/colorGrey"
+                android:text="Market #"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/item_productState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="onay bekleniyor"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/item_title"
+                android:layout_marginLeft="12dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/item_orderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="şampuan"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/item_productState"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 tl"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/item_orderName"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="08"
+                android:textColor="@color/colorRed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/item_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_date"
+                android:layout_alignStart="@id/item_date"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:text="Ekim"
+                android:textColor="@color/colorRed"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_detail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/layout_market"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorGrey"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            android:visibility="invisible"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/orderDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="detail 1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorBlack" />
+            <TextView
+                android:id="@+id/summaryPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="detail 2"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
